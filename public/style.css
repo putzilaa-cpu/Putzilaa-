@@ -1,0 +1,23 @@
+:root{--g:#39ff14;--dim:#17a30a;--bg:#020502}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--g);font-family:"Courier New",monospace}
+body{min-height:100vh;text-shadow:0 0 5px rgba(57,255,20,.45)}
+button,input,select,textarea{font:inherit;background:#000;color:var(--g);border:1px solid var(--g);padding:9px}
+button{cursor:pointer}button:hover{background:#0c2508}
+.top{border:1px solid var(--g);margin:10px;padding:8px}.top span{float:right}
+.masthead{padding:10px;text-align:center}.ascii{display:inline-block;text-align:left;max-width:100%;overflow:auto}
+nav{border:1px solid var(--g);padding:10px;display:flex;gap:8px;flex-wrap:wrap}
+main{display:grid;grid-template-columns:230px 1fr 230px;gap:10px;padding:10px}
+.panel{border:1px solid var(--g);padding:12px;margin-bottom:10px;min-width:0}
+h2,h3{margin-top:0;border-bottom:1px dashed var(--g);padding-bottom:8px}
+a{color:var(--g)}.post{border-bottom:1px dashed var(--dim);padding:10px 0}.post:last-child{border-bottom:0}
+.post-title{font-size:1.05rem;font-weight:bold}.meta{font-size:.85rem;opacity:.8;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.field{display:flex;flex-direction:column;gap:5px}
+.field.full{grid-column:1/-1}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.notice{padding:10px;border:1px dashed var(--g);margin-bottom:10px}
+.err{border-color:#ff5b5b;color:#ff5b5b}.ok{border-color:var(--g)}
+pre{white-space:pre-wrap}
+.category{padding:3px 0;cursor:pointer}.category:hover{text-decoration:underline}
+table{width:100%;border-collapse:collapse}td,th{border-bottom:1px dashed var(--dim);padding:7px;text-align:left}
+footer{border-top:1px solid var(--g);padding:15px;text-align:center;margin-top:20px}
+.scanlines{pointer-events:none;position:fixed;inset:0;z-index:10;background:repeating-linear-gradient(0deg,rgba(0,0,0,.08),rgba(0,0,0,.08) 1px,transparent 1px,transparent 3px)}
+@media(max-width:900px){main{grid-template-columns:1fr}.ascii{font-size:9px}.top span{float:none;display:block}.grid{grid-template-columns:1fr}}
