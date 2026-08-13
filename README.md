@@ -1,4 +1,4 @@
-# PUTZILAA
+# PUTsDeuM#rda
 
 Portal em estilo BBS/CRT verde para comunidade de jogos e preservação digital.
 
